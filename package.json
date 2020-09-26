@@ -1,0 +1,22 @@
+{
+  "name": "alfred-bot",
+  "version": "1.0.0",
+  "description": "A simple and friendly Discord Bot.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crydotsnake/alfred-bot.git"
+  },
+  "author": "Simon Krull",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crydotsnake/alfred-bot/issues"
+  },
+  "homepage": "https://github.com/crydotsnake/alfred-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
