@@ -6,7 +6,7 @@ export default class JokeCommand extends Command {
     super(context, {
       ...options,
       name: 'joke',
-      description: 'Tells you a random joke in your prefered language!'
+      description: 'Tells you a random joke in your prefered language!',
     });
   }
 
@@ -21,13 +21,10 @@ export default class JokeCommand extends Command {
               .setName('language')
               .setDescription('Language of the joke')
               .setRequired(true)
-              .addChoices(
-                { name: 'Deutsch', value: 'de' },
-                { name: 'Englisch', value: 'en' }
-              )
+              .addChoices({ name: 'Deutsch', value: 'de' }, { name: 'Englisch', value: 'en' })
           ),
       {
-        guildIds: [process.env.SERVER_GUILD_ID]
+        guildIds: [process.env.SERVER_GUILD_ID],
       }
     );
   }

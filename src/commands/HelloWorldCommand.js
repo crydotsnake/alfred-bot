@@ -6,16 +6,15 @@ export default class HelloWorldCommand extends Command {
     super(context, {
       ...options,
       name: 'hello',
-      description: 'Says hello!'
+      description: 'Says hello!',
     });
   }
 
   registerApplicationCommands(registry) {
     registry.registerChatInputCommand(
-      (builder) =>
-        builder.setName('hello').setDescription('Says hello!'),
+      (builder) => builder.setName('hello').setDescription('Says hello!'),
       {
-        guildIds: [process.env.SERVER_GUILD_ID]
+        guildIds: [process.env.SERVER_GUILD_ID],
       }
     );
   }
