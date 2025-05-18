@@ -8,6 +8,7 @@ const client = new SapphireClient({
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
   ],
+  loadMessageCommandListeners: true,
 });
 
 client.login(process.env.DISCORD_TOKEN).catch((err) => {
